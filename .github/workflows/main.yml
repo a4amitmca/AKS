@@ -19,5 +19,5 @@ jobs:
           username: demosrgregistry
           password: e4Uw1n9Vf9UshvSEoPhsb2z3ajD5hlNulaxPweoN0x+ACRCvMGLr
       - run: |
-          docker build . -t ${{ secrets.ACR_ENDPOINT }}/demosrgregistry:${{ github.sha }}
-          docker push ${{ secrets.ACR_ENDPOINT }}/demosrgregistry:${{ github.sha }}
+          docker build . -t demosrgregistry.azurecr.io/demosrgregistry:${{ github.sha }}
+          docker push demosrgregistry.azurecr.io/demosrgregistry:${{ github.sha }}
