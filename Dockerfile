@@ -8,8 +8,7 @@ WORKDIR usr/src/app
 
 COPY . ./
 
-RUN mvn clean package
-
+RUN mvn -f /usr/src/app/pom.xml clean package
 #
 # Package stage
 #
