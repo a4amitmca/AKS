@@ -6,7 +6,7 @@ FROM eclipse-temurin:17-jdk-jammy AS build
 
 WORKDIR usr/src/app
 
-COPY . ./
+COPY . .
 
 RUN mvn -f /usr/src/app/pom.xml clean package
 #
