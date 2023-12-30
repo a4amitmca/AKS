@@ -14,7 +14,7 @@ RUN mvn clean package
 # Package stage
 #
 
-FROM openjdk:17-jre
+FROM openjdk:17-alpine
 
 ARG JAR_NAME="spring-boot-helloworld"
 
