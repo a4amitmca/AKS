@@ -14,7 +14,7 @@ RUN mvn clean package
 # Package stage
 #
 
-FROM openjdk:11-jre-slim
+FROM eclipse-temurin:17-jdk-jammy AS build
 
 ARG JAR_NAME="spring-boot-helloworld"
 
